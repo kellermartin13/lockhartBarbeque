@@ -1,0 +1,32 @@
+#header {
+	text-align: center;
+	font-family: Helvetica;
+	padding: 20px 0;
+	background-color: #DFF0FF;
+}
+
+#footer {
+	text-align: center;
+	font-family: Helvetica;
+	padding: 8px 0;
+	margin: 1px;
+	
+}
+
+a:link {
+	color: #44749d;
+}
+
+a:hover {
+	color: #8c2238;
+	font-weight: bold;
+}
+
+a:active {
+	color: #8c2238;
+	text-decoration: none;
+}
+
+
+
+	

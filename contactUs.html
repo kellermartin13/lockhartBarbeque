@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link href="restaurantStyles.css" rel="stylesheet"
+	type="text/css" />
+	<style>
+		 
+		 #form {
+			width: 100%;
+			background-color: #DFF0FF
+			border: 1px solid;
+			}
+		 label, input {
+			padding: 10px;
+			margin: 10px;
+			}
+		textarea {
+			height: 75px;
+			width: 400px;
+			margin-top: 10px;
+			}
+		.checkbox input, label {
+			padding: 5px;
+			margin: 0px;
+			}
+		.inquiry {
+			}
+		
+		
+	
+	
+	
+	</style>
+</head>
+<body>
+<div id="header">
+	<h1>Lockhart Barbeque</h1>
+</div>
+<div id="navigation" style="text-align: left">
+	<!--Links for "Home", "Menu", and "Contact Us"-->
+	<hr />
+	<p>
+		<a href="home.html" target="_blank">Home</a>
+		<a href="menu.html" target="_blank">Menu</a>
+		<a href="contactUs.html" target="_blank">Contact Us</a>
+	</p>
+	<hr />
+</div>
+<div id="form">
+	<!--Get: Name, Email, Phone, 
+	Reason for Inquiry (dropdown): Catering (default), Private Party, Feedback, Other, 
+	Additional Info (large text), 
+	Have you been to the restaurant? Check yes/no
+	Best days to contact you: checkboxes Mon-Fri
+	"send request"-->
+	
+	<form action="submit.html" method="POST">
+		<label for="name" style="font-weight: bold">Name:</label>
+			<input type="text" id="name" name="name" required><br />
+		<label for="email" style="font-weight: bold">Email:</label>
+			<input type="text" id="email" name="email" required><br />
+		<label for="phone">Phone:</label>
+			<input type="text" id="phone" name="phone"><br />
+		<label for ="inquiry">Reason for Inquiry:</label>
+			<select id="inquiry" name="inquiry">
+				<option value="catering" selected>Catering</option>
+				<option value="privateParty">Private Party</option>
+				<option value="feedback">Feedback</option>
+				<option value="other">Other</option>
+			</select><br />
+		<label for="additionalInfo">Additional Information:</label>
+			<textarea id="additionalInfo"></textarea><br />
+		<label for="radio">Have you been to the restaurant?</label>
+			<input type="radio" id="choice1" name="radio" 
+			value="no" checked>
+				<label for="choice1">No</label>
+			<input type="radio" id="choice2"
+			name="radio" value="yes">
+				<label for="choice2">Yes</label>
+				<br />
+	<div class="checkbox">
+		<label for="days">Best days to contact you:</label>
+			<input type="checkbox" id="monday"
+			name="days" value="monday">
+				<label for="monday">M</label>
+			<input type="checkbox" id="tuesday"
+			name="days" value="tuesday">
+				<label for="tuesday">T</label>
+			<input type="checkbox" id="wednesday"
+			name="days" value="wednesday">
+				<label for="wednesday">W</label>
+			<input type="checkbox" id="thursday"
+			name="days" value="thursday">
+				<label for="thursday">Th</label>
+			<input type="checkbox" id="friday"
+			name="days" value="friday">
+				<label for="friday">F</label>
+				<br />
+	</div>
+		<input type="submit" name="submit" value="Send Request">
+	</form>
+</div>
+<div id="footer">
+	<!--Street, City, State, Zip, Telephone-->
+	<hr />
+	<footer>
+		<p>2206 S Shelby St, Louisville, KY 40217<br />
+		903-918-2607</p>
+</div>
+</body>
+</html>
