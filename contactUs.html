@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Contact Us</title>
 	<link href="restaurantStyles.css" rel="stylesheet"
 	type="text/css" />
 	<style>
-		 
+
 		 #form {
 			width: 100%;
-			background-color: #DFF0FF
+			background-color: #4B6777;
+			color: #EAEAEA;
 			border: 1px solid;
+			font-weight: bold;
 			}
 		 label, input {
-			padding: 10px;
-			margin: 10px;
+			padding: 5px;
+			margin: 5px;
+			font-weight: bold;
+			}
+
+			input {
+				width: 25%;
 			}
 		textarea {
 			height: 75px;
@@ -21,92 +30,121 @@
 			margin-top: 10px;
 			}
 		.checkbox input, label {
-			padding: 5px;
-			margin: 0px;
+			padding: 20px;
+			margin: 1px;
 			}
-		.inquiry {
-			}
-		
-		
-	
-	
-	
+
+
 	</style>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div id="header">
-	<h1>Lockhart Barbeque</h1>
-</div>
-<div id="navigation" style="text-align: left">
-	<!--Links for "Home", "Menu", and "Contact Us"-->
-	<hr />
-	<p>
-		<a href="home.html" target="_blank">Home</a>
-		<a href="menu.html" target="_blank">Menu</a>
-		<a href="contactUs.html" target="_blank">Contact Us</a>
-	</p>
-	<hr />
-</div>
-<div id="form">
-	<!--Get: Name, Email, Phone, 
-	Reason for Inquiry (dropdown): Catering (default), Private Party, Feedback, Other, 
-	Additional Info (large text), 
-	Have you been to the restaurant? Check yes/no
-	Best days to contact you: checkboxes Mon-Fri
-	"send request"-->
-	
-	<form action="submit.html" method="POST">
-		<label for="name" style="font-weight: bold">Name:</label>
-			<input type="text" id="name" name="name" required><br />
-		<label for="email" style="font-weight: bold">Email:</label>
-			<input type="text" id="email" name="email" required><br />
-		<label for="phone">Phone:</label>
-			<input type="text" id="phone" name="phone"><br />
-		<label for ="inquiry">Reason for Inquiry:</label>
-			<select id="inquiry" name="inquiry">
-				<option value="catering" selected>Catering</option>
-				<option value="privateParty">Private Party</option>
-				<option value="feedback">Feedback</option>
-				<option value="other">Other</option>
-			</select><br />
-		<label for="additionalInfo">Additional Information:</label>
-			<textarea id="additionalInfo"></textarea><br />
-		<label for="radio">Have you been to the restaurant?</label>
-			<input type="radio" id="choice1" name="radio" 
-			value="no" checked>
-				<label for="choice1">No</label>
-			<input type="radio" id="choice2"
-			name="radio" value="yes">
-				<label for="choice2">Yes</label>
-				<br />
-	<div class="checkbox">
-		<label for="days">Best days to contact you:</label>
-			<input type="checkbox" id="monday"
-			name="days" value="monday">
-				<label for="monday">M</label>
-			<input type="checkbox" id="tuesday"
-			name="days" value="tuesday">
-				<label for="tuesday">T</label>
-			<input type="checkbox" id="wednesday"
-			name="days" value="wednesday">
-				<label for="wednesday">W</label>
-			<input type="checkbox" id="thursday"
-			name="days" value="thursday">
-				<label for="thursday">Th</label>
-			<input type="checkbox" id="friday"
-			name="days" value="friday">
-				<label for="friday">F</label>
-				<br />
+<div class="container-fluid col-lg-12 col-xs-12">
+	<div class="row">
+		<div id="header">
+			<h1>Lockhart Barbeque</h1>
+		</div>
 	</div>
-		<input type="submit" name="submit" value="Send Request">
-	</form>
+	<div class="row">
+		<div id="navigation" style="text-align: left">
+			<!--Links for "Home", "Menu", and "Contact Us"-->
+
+			<ul class="nav nav-tabs">
+				<li><a href="home.html" target="_blank">
+				<span class="glyphicon glyphicon-home"></a></li>
+				<li><a href="menu.html" target="_blank">Menu</a></li>
+				<li class="active"><a href="contactUs.html" target="_blank">Contact Us</a></li>
+			</ul>
+
+		</div>
+	</div>
+	<div class="row">
+		<div id="form">
+			<form action="submit.html" method="POST">
+				<div class="form-group row">
+					<div class="col-lg-4 col-xs-6">
+						<label for="name" style="font-weight: bold">Name:</label>
+						<input class="form-control" type="text" id="name" name="name" required><br />
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-lg-4 col-xs-6">
+						<label for="email" style="font-weight: bold">Email:</label>
+						<input class="form-control" type="text" id="email" name="email" required><br />
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-lg-4 col-xs-6">
+						<label for="phone">Phone:</label>
+						<input class="form-control" type="text" id="phone" name="phone"><br />
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-lg-3 col-xs-4">
+						<label for ="inquiry">Reason for Inquiry:</label>
+							<select class="form-control" id="inquiry" name="inquiry">
+								<option value="catering" selected>Catering</option>
+								<option value="privateParty">Private Party</option>
+								<option value="feedback">Feedback</option>
+								<option value="other">Other</option>
+							</select><br />
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-lg-4 col-xs-6">
+						<label for="additionalInfo">Additional Information:</label>
+						<textarea class="form-control" id="additionalInfo"></textarea><br />
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-lg-8">
+					<label for="radio">Have you been to the restaurant?</label>
+						<input  type="radio" id="choice1"
+						name="radio" value="no" checked>
+						<label for="choice1">No</label>
+						<input type="radio" id="choice2"
+						name="radio" value="yes">
+						<label for="choice2">Yes</label>
+					</div>
+				</div>
+						<br />
+			<div class="checkbox-inline">
+				<div class="col-lg-12">
+				<label for="days">Best days to contact you:</label>
+					<label><input type="checkbox"
+					id="monday" name="days" value="monday">M</label>
+
+					<label><input type="checkbox"
+					id="tuesday" name="days" value="tuesday">T</label>
+
+					<label><input type="checkbox"
+					id="wednesday" name="days" value="wednesday">W</label>
+
+					<label><input type="checkbox"
+					id="thursday" name="days" value="thursday">Th</label>
+
+					<label><input type="checkbox"
+					id="friday" name="days" value="friday">F</label>
+
+						<br />
+					</div>
+			</div>
+			<div class="row">
+				<input type="submit" name="submit" value="Send Request"
+				style="color:black">
+			</div>
+			</form>
+		</div>
+	<div id="footer">
+
+		<footer>
+			<p>2206 S Shelby St, Louisville, KY 40217<br />
+			903-918-2607</p>
+	</div>
 </div>
-<div id="footer">
-	<!--Street, City, State, Zip, Telephone-->
-	<hr />
-	<footer>
-		<p>2206 S Shelby St, Louisville, KY 40217<br />
-		903-918-2607</p>
-</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 </html>

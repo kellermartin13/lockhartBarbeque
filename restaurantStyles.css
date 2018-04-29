@@ -1,32 +1,61 @@
+* {
+	box-sizing: border-box;
+}
+
 #header {
 	text-align: center;
 	font-family: Helvetica;
 	padding: 20px 0;
-	background-color: #DFF0FF;
+	background-color: #4B6777;
+	color: #EAEAEA;
+	font-family: Arial Black, sans-serif;
+	text-transform: uppercase;
 }
 
 #footer {
 	text-align: center;
-	font-family: Helvetica;
+	font-family: Arial Black, sans-serif;
 	padding: 8px 0;
 	margin: 1px;
-	
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+#navigation {
+	background-color:#CE9E62
+	color: #EAEAEA;
+	font-family: Arial Black, sans-serif;
 }
 
 a:link {
-	color: #44749d;
+	color: #EAEAEA;
 }
 
 a:hover {
-	color: #8c2238;
+	color: #EAEAEA;
 	font-weight: bold;
 }
 
 a:active {
-	color: #8c2238;
+	color: #EAEAEA;
 	text-decoration: none;
 }
 
+.container-fluid {
+	background-color: #CE9E62;
+}
 
+#myCarousel {
+	background-color: #2C2C2C;
+	font-family: Arial Black, Charcoal, sans-serif;
+	color: #C1432E;
+	height: 100px;
+}
 
-	
+.body {
+	background-color: #4B6777;
+	color: #EAEAEA;
+	text-align: center;
+}
