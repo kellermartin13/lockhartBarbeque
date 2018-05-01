@@ -7,13 +7,16 @@
 	<style>
 		table, th, td {
 			border: none;
-			
+			text-align: center;
 			}
 		table {
 			width: 100%;
 			}
 		th {
 			padding: 10px 0;
+			text-align: center;
+			font-family: Arial Black, sans-serif;
+			font-size: 25px;
 			}
 		td {
 			text-align: center;
@@ -22,122 +25,140 @@
 		#beverages {
 			border: 1px solid;
 			margin: 40px 20%;
+			background-color: #CE9E62;
 			}
 		#beverages td {
 			text-align: left;
 			border: none;
+			padding-left: 15px;
 			}
 		#beverages th {
 			text-decoration: underline;
+			text-align: center;
+			font-family: Arial Black, sans-serif;
+			font-size: 25px;
 			}
 		#beverages tr:nth-child(even) {
 			background-color: #DFF0FF;
 			}
 		#menu {
-			background-color: #DFF0FF;
+			background-color: #2C2C2C;
+			text-align: center;
+			color: #C1432E;
 			}
-		
-	
-	
-	
-		
+
+
 	</style>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div id="header">
-	<h1>Lockhart Barbeque</h1>
-</div>
-<div id="navigation" style="text-align: left">
-	<hr />
-	<p>
-		<a href="home.html" target="_blank">Home</a>
-		<a href="menu.html" target="_blank">Menu</a>
-		<a href="contactUs.html" target="_blank">Contact Us</a>
-	</p>
-	<hr />
-</div>
-<div id="menu">
-	<table>
-		<tr>
-			<th>Brisket</th>
-			<th>Pulled Pork Sandwich</th>
-			<th>Smoked Sausage Links</th>
-		</tr>
-		<tr>
-			<td>A Central Texas Classic!<br />
-			Sliced to order by the half pound<br />
-			Served with sliced pickles and onions,<br >
-			and white bread<br />
-			Trust us, you won't need sauce.<br />
-			$10 for a half pound</td>
-			<td>Texas style pork shoulder<br />
-			Smoked for 8 hours on Texas Post Oak<br />
-			Served with homemade slaw and pickles<br />
-			On a homemade pretzel bun<br />
-			$8</td>
-			<td>We make our own sausage.<br />
-			We smoke our own sausage.<br />
-			You have 3 choices: Original,<br />
-			Jalepeno Cheddar, Wisconsin Cheese Curd<br />
-			$3 per link</td>
-		</tr>
-		
-		<tr>
-			<th>Beef Ribs</th>
-			<th>Pork Ribs</th>
-			<th>Texas Style Chili</th>
-		</tr>
-		<tr>
-			<td>Just like Fred Flinstone<br />
-			Fall-off-the-bone tender<br />
-			Served with sliced pickles and onions<br />
-			Warning: each rib is over 1 pound<br />
-			$22 per rib</td>
-			<td>Pork ribs are delicious<br />
-			Our homemade sauce is delicious<br />
-			I promise you want the whole rack<br />
-			But we sell half racks, too<br />
-			$10 per half rack</td>
-			<td>USDA Prime Chuck Roast<br />
-			Simmered for hours in our homemade<br />
-			chili paste, made from scratch with <br />
-			Guajillo, Ancho, Chipotle, Pasillo,<br />
-			and Arbol chilies. Delicious.<br />
-			Bowl: $8, Cup: $4</td>
-		</tr>
-	</table>
-</div>
-<div id="beverages">
-	<table>
-		<tr>
-			<th colspan="2">Beverages</th>
-		</tr>
-		<tr>
-			<td>Shiner Bock</td>
-			<td>$2.50</td>
-		</tr>
-		<tr>
-			<td>Lonestar</td>
-			<td>$2.00</td>
-		</tr>
-		<tr>
-			<td>Topo Chico</td>
-			<td>$1.50</td>
-		</tr>
-		<tr>
-			<td>Bottled Water</td>
-			<td>$1.00</td>
-		</tr>
-	</table>
-</div>
-<div id="footer">
-	<hr />
-	<footer>
-		<p>2206 S Shelby St, Louisville, KY 40217<br />
-		903-918-2607</p>
+<div class="container-fluid col-lg-12">
+	<div class="row">
+		<div id="header">
+			<h1>Lockhart Barbeque</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div id="navigation" style="text-align: left">
+
+			<ul class="nav nav-tabs">
+				<li><a href="home.html" target="_blank">
+				<span class="glyphicon glyphicon-home"></a></li>
+				<li class="active"><a href="menu.html" target="_blank">Menu</a></li>
+				<li><a href="contactUs.html" target="_blank">Contact Us</a></li>
+			</ul>
+
+		</div>
+	</div>
+	<div class="row">
+		<div id="menu">
+			<table>
+				<tr>
+					<th class="col-lg-4" style="text-align: center;">Brisket</th>
+					<th class="col-lg-4" style="text-align: center;">Pulled Pork Sandwich</th>
+					<th class="col-lg-4" style="text-align: center;">Smoked Sausage Links</th>
+				</tr>
+				<tr>
+					<td class="col-lg-4">A Central Texas Classic!
+					Sliced to order by the half pound
+					Served with sliced pickles and onions,
+					and white bread
+					Trust us, you won't need sauce.<br />
+					$10 for a half pound</td>
+					<td class="col-lg-4">Pork shoulder
+					smoked for 8 hours on Texas Post Oak, and
+					served with homemade slaw and pickles
+					on a homemade pretzel bun.<br />
+					$8</td>
+					<td class="col-lg-4">We make our own sausage.
+					We smoke our own sausage.
+					You have 3 choices: Original,
+					Jalepeno Cheddar, Wisconsin Cheese Curd. <br />
+					$3 per link</td>
+				</tr>
+
+				<tr>
+					<th class="col-lg-4" style="text-align: center;">Beef Ribs</th>
+					<th class="col-lg-4" style="text-align: center;">Pork Ribs</th>
+					<th class="col-lg-4" style="text-align: center;">Texas Style Chili</th>
+				</tr>
+				<tr>
+					<td class="col-lg-4">Just like Fred Flinstone
+					Fall-off-the-bone tender
+					Served with sliced pickles and onions
+					Warning: each rib is over 1 pound. <br />
+					$22 per rib</td>
+					<td class="col-lg-4">Pork ribs are delicious
+					Our homemade sauce is delicious
+					I promise you want the whole rack
+					But we sell half racks, too. <br />
+					$10 per half rack</td>
+					<td class="col-lg-4">USDA Prime Chuck Roast
+					Simmered for hours in our homemade
+					chili paste, made from scratch with
+					Guajillo, Ancho, Chipotle, Pasillo,
+					and Arbol chilies. Delicious. <br />
+					Bowl: $8, Cup: $4</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="row" style="background-color: #4B6777;">
+		<div id="beverages">
+			<table>
+				<tr>
+					<th colspan="2">Beverages</th>
+				</tr>
+				<tr>
+					<td>Shiner Bock</td>
+					<td>$2.50</td>
+				</tr>
+				<tr>
+					<td>Lonestar</td>
+					<td>$2.00</td>
+				</tr>
+				<tr>
+					<td>Topo Chico</td>
+					<td>$1.50</td>
+				</tr>
+				<tr>
+					<td>Bottled Water</td>
+					<td>$1.00</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id="footer">
+
+		<footer>
+			<p>2206 S Shelby St, Louisville, KY 40217<br />
+			903-918-2607</p>
+	</div>
 </div>
 
-
-
-</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ </body>
 </html>
