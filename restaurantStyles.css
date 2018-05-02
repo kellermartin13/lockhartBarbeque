@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 
-#header {
+.header {
 	text-align: center;
 	font-family: Helvetica;
 	padding: 20px 0;
@@ -12,7 +12,7 @@
 	text-transform: uppercase;
 }
 
-#footer {
+.footer {
 	text-align: center;
 	font-family: Arial Black, sans-serif;
 	padding: 8px 0;
@@ -23,7 +23,7 @@
 	text-align: center;
 }
 
-#navigation {
+.navigation {
 	background-color:#CE9E62
 	color: #EAEAEA;
 	font-family: Arial Black, sans-serif;
